@@ -22,7 +22,7 @@ const Courses =() =>{
         <div className="bg-gradient-to-r from-yellow-50 to-pink-100">
             <Header />
 
-            <section>
+            <section className="pt-[104px]">
                 {/* Hero Section */}
             <div id="firstblock" className="relative  ">
                 <div  className="absolute inset-0 bg-black opacity-20 z-0"></div>
