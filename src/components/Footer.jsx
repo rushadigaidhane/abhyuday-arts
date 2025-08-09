@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -8,34 +9,34 @@ export default function Footer() {
   
   <div class="relative group bg-gradient-to-b from-yellow-50 to-pink-100 flex flex-col items-center justify-center h-40 text-black overflow-hidden">
     <img src="logo1.png" alt="Art Craft" class="w-16 mb-2 z-10" />
-    <p class="z-10">ART CRAFT</p>
+    <p class="z-10"></p>
     <span class="absolute inset-0 bg-[url('https://cdn.pixabay.com/photo/2016/09/05/19/08/background-1647414_1280.jpg')] bg-cover bg-center opacity-0 group-hover:opacity-60 transition-opacity duration-300"></span>
   </div>
 
   
   <div class="relative group bg-gradient-to-b from-yellow-50 to-pink-100 flex flex-col items-center justify-center h-40 text-black overflow-hidden">
     <img src="logo2.png" alt="Calligraphy" class="w-16 mb-2 z-10" />
-    <p class="z-10">Calligraphy</p>
+    <p class="z-10"></p>
     <span class="absolute inset-0 bg-[url('https://cdn.pixabay.com/photo/2016/09/05/19/08/background-1647414_1280.jpg')] bg-cover bg-center opacity-0 group-hover:opacity-60 transition-opacity duration-300"></span>
   </div>
 
 
   <div class="relative group bg-gradient-to-b from-yellow-50 to-pink-100 flex flex-col items-center justify-center h-40 text-black overflow-hidden">
     <img src="logo3.png" alt="Art Craft" class="w-16 mb-2 z-10" />
-    <p class="z-10">ART CRAFT</p>
+    <p class="z-10"></p>
     <span class="absolute inset-0 bg-[url('https://cdn.pixabay.com/photo/2016/09/05/19/08/background-1647414_1280.jpg')] bg-cover bg-center opacity-0 group-hover:opacity-60 transition-opacity duration-300"></span>
   </div>
 
   <div class="relative group bg-gradient-to-b from-yellow-50 to-pink-100 flex flex-col items-center justify-center h-40 text-black overflow-hidden">
-    <img src="logo5.png" alt="Art Craft" class="w-16 mb-2 z-10" />
-    <p class="z-10">ART CRAFT</p>
+    <img src="logo4.png" alt="Art Craft" class="w-16 mb-2 z-10" />
+    <p class="z-10"></p>
     <span class="absolute inset-0 bg-[url('https://cdn.pixabay.com/photo/2016/09/05/19/08/background-1647414_1280.jpg')] bg-cover bg-center opacity-0 group-hover:opacity-60 transition-opacity duration-300"></span>
   </div>
   
 
   <div class="relative group bg-gradient-to-b from-yellow-50 to-pink-100 flex flex-col items-center justify-center h-40 text-black overflow-hidden">
     <img src="logo5.png" alt="Art Craft" class="w-16 mb-2 z-10" />
-    <p class="z-10">ART CRAFT</p>
+    <p class="z-10"></p>
     <span class="absolute inset-0 bg-[url('https://cdn.pixabay.com/photo/2016/09/05/19/08/background-1647414_1280.jpg')] bg-cover bg-center opacity-0 group-hover:opacity-60 transition-opacity duration-300"></span>
   </div>
 </div>
@@ -49,21 +50,21 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 text-lg">
-          <a href="#" className="hover:text-pink-100">
+          <Link to="#" className="hover:text-pink-100">
             <i className="fab fa-whatsapp"></i>
-          </a>
-          <a href="https://www.youtube.com/@Shubhangi2610" className="hover:text-pink-100">
+          </Link>
+          <Link to="https://www.youtube.com/@Shubhangi2610" className="hover:text-pink-100">
             <i className="fab fa-youtube"></i>
-          </a>
-          <a href="#" className="hover:text-pink-100">
+          </Link>
+          <Link to="#" className="hover:text-pink-100">
             <i className="fab fa-pinterest"></i>
-          </a>
-          <a href="#" className="hover:text-pink-100">
+          </Link>
+          <Link to="#" className="hover:text-pink-100">
             <i className="fab fa-google-plus"></i>
-          </a>
-          <a href="https://www.instagram.com/shubhangigaidhane/" className="hover:text-pink-100">
+          </Link>
+          <Link to="https://www.instagram.com/shubhangigaidhane/" className="hover:text-pink-100">
             <i className="fab fa-instagram"></i>
-          </a>
+          </Link>
         </div>
 
         {/* Copyright */}

@@ -1,11 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { HeartIcon, PaintBrushIcon } from "@heroicons/react/24/outline";
 import { GiPaperWindmill, GiStairsGoal,GiTeacher } from "react-icons/gi";
 import { IoSparklesOutline } from "react-icons/io5";
 import { LiaBrushSolid } from "react-icons/lia";
 import { PiShootingStarBold } from "react-icons/pi";
-import { FaExpand } from 'react-icons/fa';
+import { FaExpand, FaArrowLeft } from 'react-icons/fa';
 import { ChevronLeft, ChevronRight } from "lucide-react"; // for arrow buttons
+import Footer from './Footer';
+import Header from "./Header";
+import './Home.css';
 
 const classes = [
   {
@@ -17,7 +20,7 @@ const classes = [
   {
     title: "Elementary And Intermediate Exam",
     subtitle: "Above 12 years",
-    description: "Enhance creativity with fun techniques & basics.",
+    description: "Foundation for further art education",
     img: "/intermediat.jpg",
   },
   {
@@ -26,13 +29,7 @@ const classes = [
     description: "Refine skills, shading, perspective, and more.",
     img: "/sketch.png",
   },
-  {
-    title: "Mehendi Classes",
-    subtitle: "All Ages",
-    description:
-      "Design elegant bridal, Arabic & floral henna patterns.",
-    img: "/images/painting.jpg",
-  },
+  
   {
     title: "Rangoli Classes",
     subtitle: "All Ages",
@@ -43,14 +40,21 @@ const classes = [
   {
     title: "Canvas painting",
     subtitle: "All Ages",
-    description: "Master line, form, composition, and painting.",
-    img: "#",
+    description: "Creating art on a canvas surface (typically cotton or linen stretched over a frame) using paints like oil or acrylic. ",
+    img: "/canvasp.jpg",
   },
   {
     title: "Craft Workshops",
     subtitle: "Above 5 years",
     description: "Enhance creativity with fun techniques & basics.",
-    img: "/intermediat.jpg",
+    img: "/craft.jpg",
+  },
+  {
+    title: "Mehendi Classes",
+    subtitle: "All Ages",
+    description:
+      "Design elegant bridal, Arabic & floral henna patterns.",
+    img: "/mehendi.jpg",
   },
 ];
 
@@ -113,8 +117,12 @@ const Home = () => {
     }
   };
 
+  const [selectedImg, setSelectedImg] = useState(null);
+
   return (
+    
     <div>
+      <Header />
        {/* Hero Section */}
       <div className="relative ">
         <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
@@ -124,13 +132,13 @@ const Home = () => {
           className="w-full h-[85vh] object-cover "
         />
         <div className="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col justify-center items-center pl-0 md:pl-12 md:items-start">
-          <h1 className="text-white text-4xl md:text-5xl font-bold">
+          <h1 className="text-white text-4xl md:text-5xl font-bold animate-fadeUp">
             ABHYUDAY ART CLASSES
           </h1>
           <p className="text-light-cream mt-3 text-lg">
             Unlock Your Creative Potential at Our Art Classes
           </p>
-          <button className=" mt-6 px-6 py-2 hover:bg-light-cream bg-pink-500  text-light-cream hover:text-pink-500  rounded">
+          <button className=" mt-6 px-6 py-2 hover:bg-light-cream bg-pink-500  text-light-cream hover:text-pink-500  rounded animate-fadeIn">
             Explore Courses
           </button>
         </div>
@@ -159,7 +167,7 @@ const Home = () => {
   <br />
 
   <div className="flex justify-center items-center gap-8 text-lg text-gray-700">
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
       <PaintBrushIcon className="h-8 w-8 mb-2 text-purple-500" />
       <span>Color Your World</span>
     </div>
@@ -180,10 +188,10 @@ const Home = () => {
   <br />
 </section>
 
-
+    
       {/* Art Classes Carousel Section */}
       <section
-  className="relative bg-cover bg-center bg-no-repeat py-12 px-4 text-white"
+  className="relative bg-cover bg-center bg-no-repeat py-10 px-4 text-white"
   style={{
     backgroundImage: "url('https://cdn.pixabay.com/photo/2013/03/23/23/10/brush-96240_1280.jpg')",
     backgroundAttachment: "fixed"
@@ -191,10 +199,10 @@ const Home = () => {
 >
   {/* Dark Overlay */}
   <div className="absolute inset-0 bg-black/70 z-0"></div>
-
+  <br />
   <div className="relative z-10">
     {/* Title */}
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-white drop-shadow-md">
+    <h2  className="text-3xl md:text-4xl font-bold text-center mb-2 text-white drop-shadow-md ">
       Choose Your Art Class
     </h2>
 
@@ -206,14 +214,14 @@ const Home = () => {
     {/* Arrow Buttons */}
     <button
       onClick={() => scroll("left")}
-      className="absolute left-2 top-[55%] transform -translate-y-1/2 z-20 p-2 rounded-full bg-white/30 hover:bg-white/60 transition"
+      className="absolute left-0 top-[67%] transform -translate-y-1/2 z-20 p-2 rounded-full bg-white/30 hover:bg-white/60 transition"
     >
       <ChevronLeft className="w-7 h-7 text-black" />
     </button>
 
     <button
       onClick={() => scroll("right")}
-      className="absolute right-2 top-[55%] transform -translate-y-1/2 z-20 p-2 rounded-full bg-white/30 hover:bg-white/60 transition"
+      className="absolute right-0 top-[67%] transform -translate-y-1/2 z-20 p-2 rounded-full bg-white/30 hover:bg-white/60 transition"
     >
       <ChevronRight className="w-7 h-7 text-black" />
     </button>
@@ -221,32 +229,37 @@ const Home = () => {
     {/* Scrollable Cards */}
     <div
       ref={scrollRef}
-      className="flex gap-6 px-8 overflow-x-auto scroll-smooth scrollbar-hide"
+      className="flex gap-12 px-8 overflow-x-auto scroll-smooth scrollbar-hide"
     >
       {classes.map((item, idx) => (
         <div
-          key={idx}
-          className="min-w-[240px] bg-white/5 border border-white/10 rounded-xl shadow-md backdrop-blur-sm hover:scale-105 transform transition duration-300 m-4"
-        >
-          <img
-            src={item.img}
-            alt={item.title}
-            className="w-full h-48 object-cover shadow-lg"
-          />
-          <div className="text-center py-4 px-2 text-white">
-            <h3 className="text-lg font-semibold tracking-wide uppercase">
-              {item.title}
-            </h3>
-            <p className="text-sm italic">{item.subtitle}</p>
-            <p className="text-sm mt-1">{item.description}</p>
-            {item.total && (
-              <p className="mt-2 text-sm font-medium">{item.total}</p>
-            )}
-          </div>
-        </div>
-      ))}
+  key={idx}
+  className="w-[300px] bg-white/5 border border-white/10 rounded-xl shadow-md backdrop-blur-sm hover:scale-105 transform transition duration-300 flex-shrink-0"
+>
+  <div id="parent" className="relative h-[200px] overflow-hidden">
+    <div id="main" className="relative w-full h-full">
+      <img
+        src={item.img}
+        alt={item.title}
+        className="w-full h-full object-cover shadow-lg "
+      />
+      <div id="slider" className="text-white px-4 py-2">
+        <h3 className="text-lg font-semibold tracking-wide uppercase">
+          {item.title}
+        </h3>
+        <p className="text-sm italic">{item.subtitle}</p>
+        <p className="text-sm mt-1">{item.description}</p>
+        {item.total && (
+          <p className="mt-2 text-sm font-medium">{item.total}</p>
+        )}
+      </div>
     </div>
   </div>
+</div>
+
+      ))}
+    </div>
+  </div><br /><br />
 </section>
 
 
@@ -280,39 +293,69 @@ const Home = () => {
     </section>
 
        {/* watch gallery Section */}
-    <section>
-      <div className="bg-gray-900 py-12 px-4 text-white">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-8 text-left">
-          <p className="text-sm text-gray-400">Our Collection</p>
-          <h2 className="text-3xl font-bold">Explore the Collection</h2>
-          <button className="mt-4 px-6 py-2 bg-pink-500 hover:bg-pink-600 rounded-full font-semibold ">
-            View All Gallery
-          </button>
-        </div>
+       <section id="gallery-section">
+  {/* Background and Header */}
+  <div className={`bg-gray-900 py-12 px-4 text-white transition-opacity duration-300 ${selectedImg ? "opacity-30" : ""}`}>
+    <div className="max-w-6xl mx-auto">
+      {/* Section Title */}
+      <div className="mb-8 text-left">
+        <p className="text-sm text-gray-400">Our Collection</p>
+        <h2 className="text-3xl font-bold">Explore the Collection</h2>
+        <button className="mt-4 px-6 py-2 bg-pink-500 hover:bg-pink-600 rounded-full font-semibold">
+          View All Gallery
+        </button>
+      </div>
 
-        {/* Image Grid */}
-        <div className="hidden sm:block columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 ">
-          {images.map((src, index) => (
-            <div key={index} className="relative group overflow-hidden rounded-md">
-              <img
-                src={src}
-                alt=""
-                className="w-full transition-all duration-300 ease-in-out group-hover:opacity-60"
-              />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <FaExpand size={40} className="text-white" />
-              </div>
+      {/* Image Grid */}
+      <div className="hidden sm:block columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+        {images.map((src, index) => (
+          <div
+            key={index}
+            className="relative group overflow-hidden rounded-md cursor-pointer"
+            onClick={() => setSelectedImg(src)}
+          >
+            <img
+              src={src}
+              alt={`Art ${index + 1}`}
+              className="w-full transition-transform duration-300 transform hover:scale-105"
+            />
+            {/* Expand Icon Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-black bg-opacity-40">
+              <FaExpand size={32} className="text-white" />
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
-    </section>
+  </div>
+
+  {/* Enlarged Image Modal */}
+  {selectedImg && (
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
+      {/* Close Icon */}
+      <button
+        className="absolute top-6 left-6 text-white hover:text-pink-400 transition"
+        onClick={() => setSelectedImg(null)}
+      >
+        <FaArrowLeft size={28} />
+      </button>
+      {/* Enlarged Image */}
+      <img
+        src={selectedImg}
+        alt="Zoomed"
+        className="max-w-[90%] max-h-[80%] rounded-lg shadow-lg"
+      />
+    </div>
+  )}
+</section>
+
+
+
+
     
     {/* youtube Section */}
     <section
-      className="flex relative bg-cover bg-center bg-no-repeat py-16 px-4 text-white bg-gradient-to-b from-yellow-50 to-pink-500"
+      className="flex relative bg-cover bg-center bg-no-repeat py-16 px-4 text-white bg-gradient-to-b from-yellow-50 to-pink-300"
     >
      
       <div className="relative z-10 max-w-6xl mx-auto">
@@ -336,6 +379,7 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <Footer />
     </div>
   );
 };

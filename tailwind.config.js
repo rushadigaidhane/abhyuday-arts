@@ -14,6 +14,15 @@ export default {
         'deep-blue': '#123C69',
         'bold-burgundy': '#AC3B61',
       },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+      animation: {
+        fadeUp: 'fadeUp 1.5s ease-out',
+      },
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],
