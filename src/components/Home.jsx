@@ -9,6 +9,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"; // for arrow buttons
 import Footer from './Footer';
 import Header from "./Header";
 import './Home.css';
+import { Link } from "react-router-dom";
 
 const classes = [
   {
@@ -124,7 +125,7 @@ const Home = () => {
     <div>
       <Header />
        {/* Hero Section */}
-      <div className="relative ">
+      <div className="relative pt-[110px] ">
         <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
         <img
           src="/image.jpg"
@@ -138,9 +139,11 @@ const Home = () => {
           <p className="text-light-cream mt-3 text-lg">
             Unlock Your Creative Potential at Our Art Classes
           </p>
+          <Link to='/courses'>
           <button className=" mt-6 px-6 py-2 hover:bg-light-cream bg-pink-500  text-light-cream hover:text-pink-500  rounded animate-fadeIn">
             Explore Courses
           </button>
+          </Link>
         </div>
       </div>
       {/* Hero Section */}
@@ -267,7 +270,7 @@ const Home = () => {
       <section className="py-16 px-6 bg-gradient-to-b from-yellow-50 to-pink-100">
       <div className="max-w-6xl mx-auto text-center">
         <p className="text-pink-500 font-semibold mb-2">Our Process</p>
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">How We Works</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">How We Work</h2>
         <p className="text-gray-500 max-w-xl mx-auto mb-12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua

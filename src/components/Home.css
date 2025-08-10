@@ -20,13 +20,13 @@
     height: 100%;
     background-color: rgba(237, 128, 128, 0.76);
     overflow: hidden;
-    transition: width 0.5s ease-in-out;
+    transition: width 0.5s  ease-in-out;
     padding: 0 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom-right-radius: 40px;
-        border-top-right-radius: 40px;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 #parent:hover #slider {
@@ -34,6 +34,6 @@
 }
 #parent:hover{
     
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
 }
