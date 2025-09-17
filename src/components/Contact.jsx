@@ -7,6 +7,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import "./Contact.css";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const Contact = () => {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
