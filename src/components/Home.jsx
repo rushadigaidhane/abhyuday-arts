@@ -139,7 +139,7 @@ const Home = () => {
           <p className="text-light-cream mt-3 text-lg">
             Unlock Your Creative Potential at Our Art Classes
           </p>
-          <Link to='/courses'>
+          <Link to='/Courses'>
           <button className=" mt-6 px-6 py-2 hover:bg-light-cream bg-pink-500  text-light-cream hover:text-pink-500  rounded animate-fadeIn">
             Explore Courses
           </button>
@@ -304,9 +304,11 @@ const Home = () => {
       <div className="mb-8 text-left">
         <p className="text-sm text-gray-400">Our Collection</p>
         <h2 className="text-3xl font-bold">Explore the Collection</h2>
+        <Link to='/Gallery'>
         <button className="mt-4 px-6 py-2 bg-pink-500 hover:bg-pink-600 rounded-full font-semibold">
           View All Gallery
         </button>
+        </Link>
       </div>
 
       {/* Image Grid */}

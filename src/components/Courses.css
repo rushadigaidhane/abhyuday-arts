@@ -73,7 +73,7 @@
     cursor: pointer;
 }
 .course-text-r button {
-    background-color: #e63946;
+    background-color: #e6399ed7;
 }
 .course-image-wrapper,
 .course-image-wrapper-r {
@@ -200,5 +200,20 @@
     .course-text-r button {
         font-size: 0.85rem;
         padding: 0.5rem 0.8rem;
+    }
+}
+:root {
+    --section-spacing: 70px;
+    /* default gap */
+}
+
+section {
+    margin-bottom: var(--section-spacing);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-spacing:0px;
+        /* smaller gap on mobile */
     }
 }

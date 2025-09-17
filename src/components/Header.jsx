@@ -87,7 +87,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Top Info */}
-        <div className="flex lg:hidden bg-pink-600 text-yellow-50 flex-1 justify-end px-5 py-2">
+        <div className="flex lg:hidden bg-gradient-to-b from-pink-400 to-pink-500 text-yellow-50 flex-1 justify-end px-5 py-2">
           <Link
             to="https://maps.app.goo.gl/u7fjQtMVQMXPmTx69"
             className="text-sm underline px-2"
@@ -132,20 +132,21 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-pink-600 text-yellow-50">
+            <Link to="/About">About</Link>
+          </li>
+          <li className="hover:text-pink-600 text-yellow-50">
             <Link to="/Courses">Courses</Link>
           </li>
+          
           <li className="hover:text-pink-600 text-yellow-50">
-            <Link to="#">Admissions</Link>
-          </li>
-          <li className="hover:text-pink-600 text-yellow-50">
-            <Link to="#">Gallery</Link>
+            <Link to="/Gallery">Gallery</Link>
           </li>
           <li className="hover:text-pink-600 text-yellow-50">
             <Link to="#">Contact</Link>
           </li>
         </ul>
 
-        <button className="hidden sm:block hover:bg-yellow-50 bg-pink-500 hover:text-pink-500 text-yellow-50 px-4 py-1 rounded text-sm">
+        <button className="hidden sm:block hover:bg-yellow-50 bg-gradient-to-b from-pink-400 to-pink-500 hover:text-pink-500 text-yellow-50 px-4 py-1 rounded text-sm">
           Log In
         </button>
 
@@ -155,19 +156,20 @@ const Header = () => {
             <Link to="/" className="hover:text-pink-600">
               Home
             </Link>
+            <Link to="/About" className="hover:text-pink-600">
+              About
+            </Link>
             <Link to="/Courses" className="hover:text-pink-600">
               Courses
             </Link>
-            <Link to="#" className="hover:text-pink-600">
-              Admissions
-            </Link>
-            <Link to="#" className="hover:text-pink-600">
+            
+            <Link to="/GAllery" className="hover:text-pink-600">
               Gallery
             </Link>
             <Link to="#" className="hover:text-pink-600">
               Contact
             </Link>
-            <button className="hover:bg-yellow-50 bg-pink-500 text-yellow-50 hover:text-pink-500 px-4 py-1 rounded text-sm">
+            <button className="hover:bg-yellow-50 bg-gradient-to-b from-pink-400 to-pink-500 text-yellow-50 hover:text-pink-500 px-4 py-1 rounded text-sm">
               Log In
             </button>
           </div>
