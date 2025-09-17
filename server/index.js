@@ -11,6 +11,13 @@ const app = express();
 
 // Middleware
 app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",             // Vite local dev
+    "https://art-site-five.vercel.app/"   // deployed frontend
+  ],
+  credentials: true
+}));
 app.use(bodyParser.json());
 
 // Routes
