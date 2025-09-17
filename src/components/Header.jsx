@@ -142,7 +142,7 @@ const Header = () => {
             <Link to="/Gallery">Gallery</Link>
           </li>
           <li className="hover:text-pink-600 text-yellow-50">
-            <Link to="#">Contact</Link>
+            <Link to="/Contact">Contact</Link>
           </li>
         </ul>
 
@@ -166,7 +166,7 @@ const Header = () => {
             <Link to="/GAllery" className="hover:text-pink-600">
               Gallery
             </Link>
-            <Link to="#" className="hover:text-pink-600">
+            <Link to="/Contact" className="hover:text-pink-600">
               Contact
             </Link>
             <button className="hover:bg-yellow-50 bg-gradient-to-b from-pink-400 to-pink-500 text-yellow-50 hover:text-pink-500 px-4 py-1 rounded text-sm">

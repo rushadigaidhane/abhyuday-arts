@@ -9,6 +9,7 @@ import About from './components/About';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Contact from './components/Contact';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Courses" element={<Courses />} />
         <Route path="/Gallery" element={<Gallery />} />
+        <Route path='/Contact' element={<Contact/>}></Route>
       </Routes>
     </Router>
   );
