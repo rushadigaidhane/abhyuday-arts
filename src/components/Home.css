@@ -37,3 +37,7 @@
     border-bottom-right-radius: 20%;
     border-top-right-radius: 20%;
 }
+
+section{
+    margin-bottom: 0px !important;
+}
