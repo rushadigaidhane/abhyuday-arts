@@ -158,6 +158,32 @@ const Home = () => {
   </div>
 </div>
 
+
+      {/* Spotlight effect */}
+      <div
+        className="absolute inset-0 pointer-events-none z-20"
+        style={{
+          background: `radial-gradient(180px circle at ${smoothPos.x}px ${smoothPos.y}px, rgba(255,255,255,0.20), transparent 80%)`,
+          transition: "background 0.05s linear",
+        }}
+      ></div>
+
+      {/* Hero content */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center pl-0 md:pl-12 md:items-start z-30">
+        <h1 className="text-white text-4xl md:text-5xl font-bold animate-fadeUp">
+          ABHYUDAY ART CLASSES
+        </h1>
+        <p className="text-light-cream mt-3 text-lg">
+          Unlock Your Creative Potential at Our Art Classes
+        </p>
+        <Link to="/Courses">
+          <button className="mt-6 px-6 py-2 hover:bg-light-cream bg-pink-500 text-light-cream hover:text-pink-500 rounded animate-fadeIn">
+            Explore Courses
+          </button>
+        </Link>
+      </div>
+    </div>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-pink-100 text-center py-12 px-4">
   <p className="text-lg md:text-xl text-gray-800 leading-relaxed max-w-3xl mx-auto mb-8">
