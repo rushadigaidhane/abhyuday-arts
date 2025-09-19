@@ -313,7 +313,11 @@ const Home = () => {
        {/* watch gallery Section */}
        <section id="gallery-section">
   {/* Background and Header */}
-  <div className={bg-gray-900 py-12 px-4 text-white transition-opacity duration-300 ${selectedImg ? "opacity-30" : ""}}>
+  <div
+  className={`bg-gray-900 py-12 px-4 text-white transition-opacity duration-300 ${
+    selectedImg ? "opacity-30" : ""
+  }`}
+>
     <div className="max-w-6xl mx-auto">
       {/* Section Title */}
       <div className="mb-8 text-left">
