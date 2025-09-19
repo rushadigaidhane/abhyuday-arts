@@ -117,29 +117,14 @@ const Home = () => {
       });
     }
   };
+  const handleMouseMove = (e) => {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+  e.currentTarget.style.setProperty("--x", `${x}%`);
+  e.currentTarget.style.setProperty("--y", `${y}%`);
+};
 
-  // === Spotlight state with smooth animation ===
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [smoothPos, setSmoothPos] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-
-    // smooth follow effect
-    const animate = () => {
-      setSmoothPos((prev) => ({
-        x: prev.x + (position.x - prev.x) * 0.1, // 0.1 = lag smoothness
-        y: prev.y + (position.y - prev.y) * 0.1,
-      }));
-      requestAnimationFrame(animate);
-    };
-    animate();
-
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [position]);
 
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -148,16 +133,31 @@ const Home = () => {
     <div>
       <Header />
        {/* Hero Section */}
-      <div className="relative pt-[110px]">
-      {/* Background image */}
-      <img
-        src="/image.jpg"
-        alt="hero"
-        className="w-full h-[85vh] object-cover"
-      />
+      {/* Hero Section */}
+<div className="relative pt-[110px] hero-section" onMouseMove={(e)=>handleMouseMove(e)}>
+  <img
+    src="/image.jpg"
+    alt="hero"
+    className="w-full h-[85vh] object-cover"
+  />
+  
+  <div className="hero-overlay"></div>
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gray-900 bg-opacity-60 z-10"></div>
+  <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center pl-0 md:pl-12 md:items-start">
+    <h1 className="text-white text-4xl md:text-5xl font-bold animate-fadeUp">
+      ABHYUDAY ART CLASSES
+    </h1>
+    <p className="text-light-cream mt-3 text-lg">
+      Unlock Your Creative Potential at Our Art Classes
+    </p>
+    <Link to='/Courses'>
+      <button className="mt-6 px-6 py-2 hover:bg-light-cream bg-pink-500 text-light-cream hover:text-pink-500 rounded animate-fadeIn">
+        Explore Courses
+      </button>
+    </Link>
+  </div>
+</div>
+
 
       {/* Spotlight effect */}
       <div
@@ -183,6 +183,7 @@ const Home = () => {
         </Link>
       </div>
     </div>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-pink-100 text-center py-12 px-4">
   <p className="text-lg md:text-xl text-gray-800 leading-relaxed max-w-3xl mx-auto mb-8">
