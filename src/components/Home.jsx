@@ -93,8 +93,8 @@ const images = [
     "/image2.jpg",
     "/intermediat.jpg",
     "/rangoli.png",
-    "/5.png",
-    "/7.jpg"
+    "/mehendi.jpg",
+    "/sketch2.png"
   ];
 
 const videos = [
