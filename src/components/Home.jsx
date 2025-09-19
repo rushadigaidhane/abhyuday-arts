@@ -163,7 +163,7 @@ const Home = () => {
       <div
         className="absolute inset-0 pointer-events-none z-20"
         style={{
-          background: `radial-gradient(180px circle at ${smoothPos.x}px ${smoothPos.y}px, rgba(255,255,255,0.35), transparent 80%)`,
+          background: `radial-gradient(180px circle at ${smoothPos.x}px ${smoothPos.y}px, rgba(255,255,255,0.20), transparent 80%)`,
           transition: "background 0.05s linear",
         }}
       ></div>
