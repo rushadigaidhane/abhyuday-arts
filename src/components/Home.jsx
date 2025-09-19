@@ -121,9 +121,10 @@ const Home = () => {
   const rect = e.currentTarget.getBoundingClientRect();
   const x = ((e.clientX - rect.left) / rect.width) * 100;
   const y = ((e.clientY - rect.top) / rect.height) * 100;
-  e.currentTarget.style.setProperty("--x", ${x}%);
-  e.currentTarget.style.setProperty("--y", ${y}%);
+  e.currentTarget.style.setProperty("--x", `${x}%`);
+  e.currentTarget.style.setProperty("--y", `${y}%`);
 };
+
 
 
   const [selectedImg, setSelectedImg] = useState(null);
