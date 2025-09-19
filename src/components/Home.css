@@ -41,3 +41,28 @@
 section{
     margin-bottom: 0px !important;
 }
+
+/* Hero Section Overlay Effect */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(
+      circle 200px at var(--x, 50%) var(--y, 50%),
+      rgba(0, 0, 0, 0.0) 0%,
+      rgba(0, 0, 0, 0.5) 80%
+    );
+  opacity: 0; /* invisible by default */
+  pointer-events: none;
+  transition: opacity 0.4s ease; /* smooth fade */
+}
+
+.hero-section:hover .hero-overlay {
+  opacity:1; /* fade in gradient on hover */
+}
