@@ -183,6 +183,100 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      {/* Social Contact Section */}
+<section className="py-16 px-6 md:px-20 bg-gradient-to-b from-yellow-50 to-pink-100">
+  <div className="max-w-4xl mx-auto text-center">
+    <p className="text-gray-700 mb-10 text-lg">
+      For any queries, enrollment, and commissions, please reach out to us using any of the following
+      mediums. Before visiting, <span className="font-semibold">kindly call us</span> to take appointment.
+    </p>
+
+    <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 bg-white shadow-lg rounded-2xl p-8">
+      {/* Whatsapp */}
+      <div className="flex items-center space-x-4">
+        <div className="bg-green-100 p-3 rounded-full">
+          <i className="fa-brands fa-whatsapp text-green-600 text-xl"></i>
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold">Whatsapp / Call</h4>
+          <p className="text-gray-600 text-sm">+91-7796572450</p>
+        </div>
+      </div>
+
+      {/* Email */}
+      <div className="flex items-center space-x-4">
+        <div className="bg-blue-100 p-3 rounded-full">
+          <i className="fa-solid fa-envelope text-blue-600 text-xl"></i>
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold">Email</h4>
+          <p className="text-gray-600 text-sm">shubhsngigaidhane@gmail.com</p>
+        </div>
+      </div>
+
+      {/* Instagram */}
+      <div className="flex items-center space-x-4">
+        <div className="bg-yellow-100 p-3 rounded-full">
+          <i className="fa-brands fa-instagram text-yellow-600 text-xl"></i>
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold">Instagram</h4>
+          <p className="text-gray-600 text-sm">@shubhangigaidhane</p>
+        </div>
+      </div>
+
+      {/* Youtube */}
+      <div className="flex items-center space-x-4">
+        <div className="bg-red-100 p-3 rounded-full">
+          <i className="fa-brands fa-youtube text-red-600 text-xl"></i>
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold">Youtube Channel</h4>
+          <p className="text-gray-600 text-sm">Abhyuday arts(@Shubhangi2610)</p>
+        </div>
+      </div>
+
+      
+      
+    </div>
+  </div>
+</section>
+<section className="bg-gradient-to-b from-yellow-50 to-pink-100 py-12 px-6 text-center">
+  {/* Title */}
+  <h2 className="text-xl md:text-2xl font-semibold tracking-wide text-gray-800 mb-6">
+    VISIT US (WITH APPOINTMENT ONLY)
+  </h2>
+
+  {/* Google Map Embed */}
+  <div className="flex justify-center mb-6 ">
+    <iframe
+      title="Abhyuday Art classes Location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.345598117252!2d79.6517116!3d21.1784258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2b3f5d21f423e1%3A0xad5c017d178c56f0!2sAbhyuday%20art%20classes!5e0!3m2!1sen!2sin!4v1758282497379!5m2!1sen!2sin"
+      width="400"
+      height="250"
+      style={{ border: "0", borderRadius: "0.5rem" }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  {/* Address */}
+  <p className="text-gray-700 max-w-xl mx-auto mb-4 text-sm md:text-base leading-relaxed">
+    <span className="font-semibold">Address:</span> <br />
+    Abhyuday home, bank colony, Sahakar Nagar, Bhandara, Maharashtra 441904
+  </p>
+
+  {/* Google Map Link */}
+  <a
+    href="https://www.google.com/maps/place/Abhyuday+art+classes/@21.1784258,79.6517116,17z/data=!3m1!4b1!4m6!3m5!1s0x3a2b3f5d21f423e1:0xad5c017d178c56f0!8m2!3d21.1784258!4d79.6517116!16s%2Fg%2F11mw7hd2bw?entry=tts&g_ep=EgoyMDI1MDcyNy4wIPu8ASoASAFQAw%3D%3D&skid=087bf2d4-277a-46ed-9c6f-02d611fd0855"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-pink-600 hover:text-black underline font-medium"
+  >
+    Link to Map: Abhyuday Art Classes – Google Maps
+  </a>
+</section>
 
       <Footer />
     </div>

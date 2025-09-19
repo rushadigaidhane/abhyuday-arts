@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { HeartIcon, PaintBrushIcon } from "@heroicons/react/24/outline";
 import { GiPaperWindmill, GiStairsGoal,GiTeacher } from "react-icons/gi";
 import { IoSparklesOutline } from "react-icons/io5";
@@ -93,8 +93,8 @@ const images = [
     "/image2.jpg",
     "/intermediat.jpg",
     "/rangoli.png",
-    "/5.png",
-    "/7.jpg"
+    "/mehendi.jpg",
+    "/sketch2.png"
   ];
 
 const videos = [
@@ -258,16 +258,18 @@ const Home = () => {
         alt={item.title}
         className="w-full h-full object-cover shadow-lg "
       />
-      <div id="slider" className="text-white px-4 py-2">
-        <h3 className="text-lg font-semibold tracking-wide uppercase">
-          {item.title}
-        </h3>
-        <p className="text-sm italic">{item.subtitle}</p>
-        <p className="text-sm mt-1">{item.description}</p>
-        {item.total && (
-          <p className="mt-2 text-sm font-medium">{item.total}</p>
-        )}
-      </div>
+      <div
+  id="slider"
+  className="absolute inset-0 bg-black/60 backdrop-blur-md opacity-0 translate-y-5 transition duration-500 ease-in-out flex flex-col justify-center rounded-xl px-4 py-2 group-hover:opacity-100 group-hover:translate-y-0"
+>
+  <h3 className="text-lg font-semibold tracking-wide uppercase">{item.title}</h3>
+  <p className="text-sm italic">{item.subtitle}</p>
+  <p className="text-sm mt-1">{item.description}</p>
+  {item.total && (
+    <p className="mt-2 text-sm font-medium">{item.total}</p>
+  )}
+</div>
+
     </div>
   </div>
 </div>

@@ -16,29 +16,36 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 100%;
+    /* full width instead of expanding */
     height: 100%;
-    background-color: rgba(237, 128, 128, 0.76);
-    overflow: hidden;
-    transition: width 0.5s  ease-in-out;
-    padding: 0 0px;
+    background: rgba(20, 20, 20, 0.65);
+    /* dark glass effect */
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    /* start invisible */
+    transform: translateY(20px);
+    /* slide-up effect */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom-right-radius: 20%;
-    border-top-right-radius: 20%;
+    border-radius: 0.75rem;
+    /* smooth card-like feel */
 }
 
 #parent:hover #slider {
-    width: 100%;
+    opacity: 1;
+    transform: translateY(0);
+    /* slide up on hover */
 }
 #parent:hover{
     
     border-bottom-right-radius: 20%;
     border-top-right-radius: 20%;
 }
-
-section{
+section {
     margin-bottom: 0px !important;
 }
 
