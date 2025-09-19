@@ -121,8 +121,8 @@ const Home = () => {
   const rect = e.currentTarget.getBoundingClientRect();
   const x = ((e.clientX - rect.left) / rect.width) * 100;
   const y = ((e.clientY - rect.top) / rect.height) * 100;
-  e.currentTarget.style.setProperty("--x", `${x}%`);
-  e.currentTarget.style.setProperty("--y", `${y}%`);
+  e.currentTarget.style.setProperty("--x", ${x}%);
+  e.currentTarget.style.setProperty("--y", ${y}%);
 };
 
 
@@ -132,7 +132,7 @@ const Home = () => {
     
     <div>
       <Header />
-      
+       {/* Hero Section */}
       {/* Hero Section */}
 <div className="relative pt-[110px] hero-section" onMouseMove={(e)=>handleMouseMove(e)}>
   <img
@@ -157,7 +157,6 @@ const Home = () => {
     </Link>
   </div>
 </div>
-      
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-pink-100 text-center py-12 px-4">
@@ -313,7 +312,7 @@ const Home = () => {
        {/* watch gallery Section */}
        <section id="gallery-section">
   {/* Background and Header */}
-  <div className={`bg-gray-900 py-12 px-4 text-white transition-opacity duration-300 ${selectedImg ? "opacity-30" : ""}`}>
+  <div className={bg-gray-900 py-12 px-4 text-white transition-opacity duration-300 ${selectedImg ? "opacity-30" : ""}}>
     <div className="max-w-6xl mx-auto">
       {/* Section Title */}
       <div className="mb-8 text-left">
@@ -336,7 +335,7 @@ const Home = () => {
           >
             <img
               src={src}
-              alt={`Art ${index + 1}`}
+              alt={Art ${index + 1}}
               className="w-full transition-transform duration-300 transform hover:scale-105"
             />
             {/* Expand Icon Overlay */}
@@ -389,7 +388,7 @@ const Home = () => {
                 width="100%"
                 height="100%"
                 src={link}
-                title={`Testimonial ${index + 1}`}
+                title={Testimonial ${index + 1}}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
