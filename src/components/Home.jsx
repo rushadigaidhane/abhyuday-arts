@@ -22,10 +22,26 @@ const classes = [
 ];
 
 const steps = [
-  { title: "Choose Your Class", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", icon: <LiaBrushSolid className="text-pink-500 hover:text-white text-7xl p-4" />, bg: "bg-white" },
-  { title: "Join Our Class", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", icon: <PiShootingStarBold className="text-pink-500 hover:text-white text-7xl p-4" />, bg: "bg-white" },
-  { title: "Enjoy Your Painting", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", icon: <GiTeacher className="text-pink-500 hover:text-white text-7xl p-4" />, bg: "bg-white" },
+  { 
+    title: "Choose Your Class", 
+    description: "Browse our variety of art classes and select the one that matches your style, skill level, and creative goals.", 
+    icon: <LiaBrushSolid className="text-pink-500 hover:text-white text-7xl p-4" />, 
+    bg: "bg-white" 
+  },
+  { 
+    title: "Join Our Class", 
+    description: "Register easily and become part of a friendly, supportive community of art enthusiasts ready to create together.", 
+    icon: <PiShootingStarBold className="text-pink-500 hover:text-white text-7xl p-4" />, 
+    bg: "bg-white" 
+  },
+  { 
+    title: "Enjoy Your Painting", 
+    description: "Unleash your creativity, learn new techniques, and experience the joy of bringing your imagination to life on canvas.", 
+    icon: <GiTeacher className="text-pink-500 hover:text-white text-7xl p-4" />, 
+    bg: "bg-white" 
+  },
 ];
+
 
 const images = [
   "/Drawing2.jpg", "/sketch.png", "/image.jpg", "/image2.jpg", "/intermediat.jpg", "/rangoli.png", "/mehendi.jpg", "/sketch2.png"
@@ -63,8 +79,8 @@ const Home = () => {
       <Header />
 
       {/* Hero Section */}
-      <div className="relative pt-[110px] hero-section" onMouseMove={handleMouseMove}>
-        <img src="/image.jpg" alt="hero" className="w-full h-[85vh] object-cover" />
+      <div className="relative pt-[97px] hero-section" onMouseMove={handleMouseMove}>
+        <img src="/image.jpg" alt="hero" className="w-full h-[88vh] object-cover" />
         <div className="hero-overlay"></div>
         <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center pl-0 md:pl-12 md:items-start">
           <h1 className="text-white text-4xl md:text-5xl font-bold animate-fadeUp">ABHYUDAY ART CLASSES</h1>
@@ -136,8 +152,12 @@ const Home = () => {
       <section className="py-16 px-6 bg-gradient-to-b from-yellow-50 to-pink-100">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-pink-500 font-semibold mb-2">Our Process</p>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">How We Work</h2>
-          <p className="text-gray-500 max-w-xl mx-auto mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+<h2 className="text-3xl font-bold text-gray-800 mb-4">How We Work</h2>
+<p className="text-gray-500 max-w-xl mx-auto mb-12">
+  We make learning art simple, fun, and inspiring. From choosing the right class to 
+  hands-on guidance and finally enjoying your own masterpiece, our process is designed 
+  to help you grow creatively at every step.
+</p>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {steps.map((step, idx) => (

@@ -117,7 +117,7 @@ const fadeUp = {
 
 const Courses = () => {
   return (
-    <div className="relative pt-[130px] bg-gradient-to-r from-yellow-50 to-pink-100 min-h-screen">
+    <div className="relative pt-[97px] bg-gradient-to-r from-yellow-50 to-pink-100 min-h-screen">
       <Header />
 
       {/* Hero Section */}
