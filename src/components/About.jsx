@@ -12,7 +12,7 @@ const About = () => {
         {/* Left - Image */}
         <div className="flex justify-center">
           <img
-            src="https://cdn.pixabay.com/photo/2015/08/28/11/37/painting-911804_1280.jpg" // replace with your image
+            src="/about.jpg" // replace with your image
             alt="Abhyuday Art classes"
             className="rounded-2xl shadow-lg w-full max-w-md object-cover"
           />

@@ -10,10 +10,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const images = [
-  "https://cdn.pixabay.com/photo/2015/08/28/11/37/painting-911804_1280.jpg",
+  "/group1.jpg",
   "https://cdn.pixabay.com/photo/2020/12/10/20/40/color-5821297_1280.jpg",
   "https://cdn.pixabay.com/photo/2019/05/08/20/06/school-4189534_1280.jpg",
-  "https://cdn.pixabay.com/photo/2016/09/16/11/04/painting-1673774_1280.jpg",
+  "/group2.jpg",
   "https://cdn.pixabay.com/photo/2016/09/16/11/04/child-1673773_1280.jpg",
   "https://cdn.pixabay.com/photo/2023/04/19/14/00/paint-7937871_1280.jpg",
   "https://cdn.pixabay.com/photo/2016/11/29/08/58/hands-1868562_1280.jpg",
@@ -86,9 +86,7 @@ const Gallery = () => {
                 <p className="max-w-2xl mb-6 text-lg md:text-xl animate-fadeInUp delay-200">
                   Explore stunning collections and immerse yourself in creativity.
                 </p>
-                <button className="px-6 py-3 bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 animate-fadeInUp delay-400">
-                  Explore Now
-                </button>
+                
               </div>
             </div>
           ))}
