@@ -83,7 +83,7 @@ const Header = () => {
       className="flex items-center space-x-1 sm:space-x-2 text-yellow-50 hover:text-black text-xs sm:text-sm"
     >
       <PhoneIcon className="h-4 w-4 sm:h-5 sm:w-5" />
-      <span>+91 98765 43210</span>
+      <span>+91 7507333250</span>
     </Link>
   </div>
 
