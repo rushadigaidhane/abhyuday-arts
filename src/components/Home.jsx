@@ -110,12 +110,25 @@ const Home = () => {
           <span className="text-indigo-600 font-medium">Explore your imagination — and turn it into art!</span>
         </p>
 
-        <div className="flex justify-center items-center gap-8 text-lg text-gray-700">
-          <div className="flex flex-col items-center"><PaintBrushIcon className="h-8 w-8 mb-2 text-purple-500" /><span>Color Your World</span></div>
-          <div className="flex flex-col items-center"><GiPaperWindmill className="h-8 w-8 mb-2 text-teal-500" /><span>Craft Confidence</span></div>
-          <div className="flex flex-col items-center"><IoSparklesOutline className="h-8 w-8 mb-2 text-pink-500" /><span>Spark Young Imaginations</span></div>
-          <div className="flex flex-col items-center"><GiStairsGoal className="h-8 w-8 mb-2 text-emerald-500" /><span>Master Artistic Skills</span></div>
-        </div>
+        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 text-base sm:text-lg text-gray-700">
+  <div className="flex flex-col items-center w-1/2 sm:w-auto mb-4 sm:mb-0">
+    <PaintBrushIcon className="h-8 w-8 mb-2 text-purple-500" />
+    <span>Color Your World</span>
+  </div>
+  <div className="flex flex-col items-center w-1/2 sm:w-auto mb-4 sm:mb-0">
+    <GiPaperWindmill className="h-8 w-8 mb-2 text-teal-500" />
+    <span>Craft Confidence</span>
+  </div>
+  <div className="flex flex-col items-center w-1/2 sm:w-auto mb-4 sm:mb-0">
+    <IoSparklesOutline className="h-8 w-8 mb-2 text-pink-500" />
+    <span>Spark Young Imaginations</span>
+  </div>
+  <div className="flex flex-col items-center w-1/2 sm:w-auto mb-4 sm:mb-0">
+    <GiStairsGoal className="h-8 w-8 mb-2 text-emerald-500" />
+    <span>Master Artistic Skills</span>
+  </div>
+</div>
+
       </section>
 
       {/* Art Classes Carousel */}
