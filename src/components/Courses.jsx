@@ -65,7 +65,7 @@ const courses = [
         </p>
       </>
     ),
-    image: "/elementary.jpg",
+    image: "/elementry2.jpg",
   },
 
   {

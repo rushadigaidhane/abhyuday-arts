@@ -21,15 +21,16 @@ const images = [
 
 const artworks = [
   { id: 1, category: "Sketching", img: "/sketch.png" },
-  { id: 2, category: "Elementary", img: "/elementary.jpg" },
+  { id: 2, category: "Elementary", img: "/elementry3.jpg" },
   { id: 3, category: "Intermediate", img: "/intermediat.jpg" },
   { id: 4, category: "Rangoli", img: "/rangoli.png" },
   { id: 5, category: "Rangoli", img: "/Rangoli1.jpg" },
   { id: 6, category: "Rangoli", img: "/rangoli2.jpg" },
-  { id: 7, category: "Rangoli", img: "/rangoli3.jpg" },
-  { id: 8, category: "Rangoli", img: "/rangoli5.jpg" },
-  { id: 9, category: "Rangoli", img: "/rangoli6.jpg" },
-  { id: 10, category: "Craft", img: "/craft1.jpg" },
+  { id: 7, category: "Rangoli", img: "/rangoli9.jpg" },
+  { id: 8, category: "Rangoli", img: "/rangoli10.jpg" },
+  { id: 9, category: "Sketching", img: "/sketch5.jpg" },
+  { id: 10, category: "Sketching", img: "/sketch6.jpg" },
+
   { id: 11, category: "Craft", img: "/craft2.jpg" },
   { id: 12, category: "Craft", img: "/craft3.jpg" },
   { id: 13, category: "Craft", img: "/craft.jpg" },
@@ -37,6 +38,27 @@ const artworks = [
   { id: 15, category: "Sketching", img: "/sketch1.jpg" },
   { id: 16, category: "Drawing", img: "/drawing.jpg" },
   { id: 17, category: "Drawing", img: "/Drawing2.jpg" },
+  { id: 18, category: "Elementary", img: "/elementry2.jpg" },
+  { id: 19, category: "Intermediate", img: "/intermidiate1.jpg" },
+
+  { id: 20, category: "Sketching", img: "/sketch3.jpg" },
+  { id: 21, category: "Intermediate", img: "/intermidiate4.jpg" },
+  { id: 22, category: "Sketching", img: "/sketch4.jpg" },
+  { id: 23, category: "Sketching", img: "/sketch9.jpg" },
+  { id: 24, category: "Intermediate", img: "/intermidiate3.jpg" },
+  { id: 25, category: "Intermediate", img: "/intermidiate2.jpg" },
+  { id: 26, category: "Rangoli", img: "/rangoli7.jpg" },
+  { id: 27, category: "Rangoli", img: "/rangoli8.jpg" },
+  { id: 28, category: "Drawing", img: "/drawing3.jpg" },
+  { id: 29, category: "Drawing", img: "/drawing4.jpg" },
+  { id: 30, category: "Rangoli", img: "/rangoli3.jpg" },
+  { id: 31, category: "Rangoli", img: "/rangoli5.jpg" },
+  { id: 32, category: "Sketching", img: "/sketch7.jpg" },
+  { id: 33, category: "Craft", img: "/craft1.jpg" },
+  { id: 34, category: "Mehendi",img: "/mehendi.jpg"}
+
+
+  
 ];
 
 
