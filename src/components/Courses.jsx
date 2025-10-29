@@ -48,47 +48,137 @@ const courses = [
     image: "/sketch.png",
   },
 
-  {
-    title: "Elementary Classes",
-    description: (
-      <>
-        <p>
-          A playful, structured introduction to art designed for children and
-          first-time learners. Our <strong className="font-bold">Elementary Classes </strong>
-          encourage creativity through friendly projects that teach color theory,
-          basic shapes, and composition in a fun way.
-        </p>
-        <p className="mt-2">
-          Sessions are crafted to build <strong className="font-bold">confidence and imagination</strong>,
-          making them perfect for kids preparing for elementary grade exams or
-          parents who want a nurturing creative environment for their child.
-        </p>
-      </>
-    ),
-    image: "/elementry2.jpg",
-  },
+ {
+  title: "Elementary & Intermediate Drawing Grade Exam Preparation",
+  description: (
+    <>
+      <p>
+        Our <strong className="font-bold">Elementary and Intermediate Drawing Grade Exam Preparation Classes </strong>
+         are designed for students from <strong>7th standard and above</strong> who aim to excel in the
+        nationally recognized art grade examinations conducted in states like 
+        <strong> Maharashtra, Goa, Madhya Pradesh, and Uttar Pradesh.</strong>
+      </p>
+
+      <p className="mt-2">
+        These exams serve as a foundation for students aspiring to pursue higher education in 
+        <strong> Commercial or Applied Art, Fine Art, Textile Designing, Interior Designing, Fashion Designing, and Architecture. </strong> 
+        Passing these exams — especially the Intermediate Grade — gives students preference when seeking admission to 
+        <strong> Government Art Colleges</strong> and other professional institutes.
+      </p>
+
+      <p className="mt-2">
+        <strong className="font-bold">Elementary Grade Exam</strong> is meant for beginners (7th standard and above)
+        to develop observation, creativity, and visualization skills. Students who clear the Elementary Exam qualify
+        for the <strong>Intermediate Grade Exam</strong>, which focuses on mastering advanced drawing techniques and design principles.
+      </p>
+
+      <p className="mt-3 font-semibold text-lg">📘 Examination Pattern:</p>
+      <ul className="list-disc list-inside mt-1">
+        <li><strong>Elementary Grade Exam</strong></li>
+        <ul className="list-disc list-inside ml-4">
+          <li>Paper 1 – Object Drawing – 2½ hours</li>
+          <li>Paper 2 – Memory Drawing – 2 hours</li>
+          <li>Paper 3 – Design – 2 hours</li>
+          <li>Paper 4 – Plain Practical Geometry & Lettering – 2 hours</li>
+        </ul>
+        <li className="mt-2"><strong>Intermediate Grade Exam</strong></li>
+        <ul className="list-disc list-inside ml-4">
+          <li>Paper 1 – Still Life – 3 hours</li>
+          <li>Paper 2 – Memory Drawing – 2 hours</li>
+          <li>Paper 3 – Design – 3 hours</li>
+          <li>Paper 4 – Plain Practical Geometry, Solid Geometry & Lettering – 2½ hours</li>
+        </ul>
+      </ul>
+
+    </>
+  ),
+  image: "/intermediat.jpg",
+},
 
   {
-    title: "Intermediate Classes",
-    description: (
-      <>
-        <p>
-          Move beyond basics and discover advanced methods in composition,
-          anatomy, and mixed media. Our <strong className="font-bold">Intermediate Classes </strong>
-          refine your technique while helping you explore your personal artistic voice.
-        </p>
-        <p className="mt-2">
-          Through focused projects and expert feedback, students work toward
-          complex, gallery-ready pieces — ideal for those preparing for
-          intermediate exams or serious artistic growth.
-        </p>
-      </>
-    ),
-    image: "/intermediat.jpg",
-  },
+  title: "NATA & JEE Paper 2 (Drawing) Preparation Classes",
+  description: (
+    <>
+      <p>
+        Prepare confidently for <strong className="font-bold">NATA</strong> and 
+        <strong className="font-bold"> JEE Paper 2 (Drawing Test)</strong> with our specialized art training. 
+        These sessions are crafted for students aspiring to join <strong className="font-bold">Architecture and Design colleges</strong>, 
+        focusing on skill development, creative visualization, and technical accuracy.
+      </p>
+      <p className="mt-2">
+        The course covers key topics such as <strong className="font-bold">perspective drawing, 2D & 3D composition, 
+        memory sketching, light and shadow concepts, color theory,</strong> and <strong className="font-bold">aesthetic sense development</strong>. 
+        Each session helps students improve observation, imagination, and presentation skills — essential for scoring high in the exams.
+      </p>
+      <p className="mt-2">
+        With regular mock tests, portfolio guidance, and expert feedback, 
+        students gain the confidence to perform exceptionally in the entrance exams.
+      </p>
+    </>
+  ),
+  image: "/sketch4.jpg",
+},
 
   {
-    title: "Art for the Soul",
+  title: "Rangoli Classes",
+  description: (
+    <>
+      <p>
+        Discover the art of creating stunning <strong className="font-bold">Rangolis</strong> that bring color, culture, and creativity to life! 
+        Learn various styles including <strong className="font-bold">Sanskar Bharti Rangoli, Nature-inspired Rangoli, and Portrait Rangoli</strong>, 
+        each designed to help you master patterns, symmetry, and color blending.
+      </p>
+      <p className="mt-2">
+        Perfect for festive decorations, competitions, and artistic expression — our sessions blend traditional 
+        design principles with modern creativity, guiding you to make Rangolis that tell stories through color and form.
+      </p>
+    </>
+  ),
+  image: "/rangoli.png",
+},
+{
+  title: "Mehendi Classes",
+  description: (
+    <>
+      <p>
+        Learn the intricate and graceful art of <strong className="font-bold">Mehendi Designing</strong> — from delicate traditional patterns 
+        to contemporary styles. Our classes cover popular designs like <strong className="font-bold">Bridal Mehendi, Marwadi Mehendi, 
+        and Shading Mehendi</strong>, with detailed instruction on line work, cone handling, and creative motifs.
+      </p>
+      <p className="mt-2">
+        Whether you’re a beginner or an aspiring professional artist, these sessions will enhance your creativity and confidence, 
+        preparing you for events, client work, or personal artistry with elegance and precision.
+      </p>
+    </>
+  ),
+  image: "/mehendi.jpg",
+},
+{
+  title: "Canvas Painting Classes",
+  description: (
+    <>
+      <p>
+        Unlock your creativity with <strong className="font-bold">Canvas Painting Classes</strong> designed to teach 
+        the beauty of brushwork, color harmony, and composition. Learn how to bring your imagination to life using 
+        <strong className="font-bold"> acrylic, oil, and mixed media techniques</strong> — perfect for both beginners and experienced artists.
+      </p>
+      <p className="mt-2">
+        Our lessons cover everything from <strong className="font-bold">landscapes, abstract art, still life,</strong> 
+        to <strong className="font-bold">modern portrait painting</strong>. With hands-on guidance, you'll explore blending, layering, 
+        and texture creation — turning every canvas into a meaningful masterpiece.
+      </p>
+      <p className="mt-2">
+        Ideal for art enthusiasts who wish to <strong className="font-bold">express emotions through color</strong> and 
+        develop a personal artistic style in a calm, inspiring environment.
+      </p>
+    </>
+  ),
+  image: "/canvasp.jpg",
+},
+
+
+  {
+    title: "Craft Classes",
     description: (
       <>
         <p>

@@ -55,7 +55,7 @@ const artworks = [
   { id: 31, category: "Rangoli", img: "/rangoli5.jpg" },
   { id: 32, category: "Sketching", img: "/sketch7.jpg" },
   { id: 33, category: "Craft", img: "/craft1.jpg" },
-  { id: 34, category: "Mehendi",img: "/mehendi.jpg"}
+  { id: 34, category: "Mehendi",img: "/mehendi.jpg"},
 
 
   
