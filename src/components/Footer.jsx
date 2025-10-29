@@ -46,20 +46,17 @@ export default function Footer() {
       <div className="flex flex-col items-center space-y-4">
         {/* Logo */}
         <div className="text-white text-xl font-bold">ABHYUDAY ART</div>
-        <div className="text-sm tracking-wide">IN CODE ART</div>
-
+        
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 text-lg">
-          <Link to="#" className="hover:text-pink-100">
+          <Link to="https://wa.me/7796572450" className="hover:text-pink-100">
             <i className="fab fa-whatsapp"></i>
           </Link>
           <Link to="https://www.youtube.com/@Shubhangi2610" className="hover:text-pink-100">
             <i className="fab fa-youtube"></i>
           </Link>
-          <Link to="#" className="hover:text-pink-100">
-            <i className="fab fa-pinterest"></i>
-          </Link>
-          <Link to="#" className="hover:text-pink-100">
+        
+          <Link to="https://art-site-five.vercel.app/" className="hover:text-pink-100">
             <i className="fab fa-google-plus"></i>
           </Link>
           <Link to="https://www.instagram.com/shubhangigaidhane/" className="hover:text-pink-100">

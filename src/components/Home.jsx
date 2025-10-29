@@ -83,8 +83,8 @@ const Home = () => {
         <img src="/image.jpg" alt="hero" className="w-full h-[88vh] object-cover" />
         <div className="hero-overlay"></div>
         <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center pl-0 md:pl-12 md:items-start">
-          <h1 className="text-white text-4xl md:text-5xl font-bold animate-fadeUp">ABHYUDAY ART CLASSES</h1>
-          <p className="text-light-cream mt-3 text-lg">
+          <h1 className="text-white text-4xl md:text-5xl font-bold animate-fadeUp pl-3" >ABHYUDAY ART CLASSES</h1>
+          <p className="text-light-cream mt-3 text-lg pl-3">
             Unlock Your Creative Potential at Our Art Classes
           </p>
           <Link to='/Courses'>
