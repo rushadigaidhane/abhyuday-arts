@@ -56,7 +56,7 @@ const Header = () => {
       >
         <FaYoutube className="h-4 w-4 sm:h-5 sm:w-5" />
       </Link>
-      <Link to="#" className="text-pink-600 hover:text-black">
+      <Link to="https://wa.me/7796572450" className="text-pink-600 hover:text-black">
         <FaWhatsapp className="h-4 w-4 sm:h-5 sm:w-5" />
       </Link>
     </div>
@@ -105,7 +105,7 @@ const Header = () => {
       href="tel:+919876543210"
       className="flex items-center space-x-1 text-yellow-50 hover:text-black text-xs sm:text-sm"
     >
-      <PhoneIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+      
       <span>Contact</span>
     </a>
   </div>
