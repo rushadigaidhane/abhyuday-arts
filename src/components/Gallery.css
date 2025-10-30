@@ -1,3 +1,13 @@
+/* In Gallery.css */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: 0 !important;
+}
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -21,3 +31,4 @@
 .animate-fadeInUp.delay-400 {
     animation-delay: 0.4s;
 }
+

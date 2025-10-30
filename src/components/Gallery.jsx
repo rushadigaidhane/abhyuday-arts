@@ -120,16 +120,20 @@ const Gallery = () => {
         <div className="flex flex-wrap gap-4 justify-center mb-8">
           {categories.map((e) => (
             <button
-              key={e}
-              onClick={() => setSelectedCategory(e)}
-              className={`px-4 py-2 border rounded-md transition ${
-                selectedCategory === e
-                  ? "bg-gradient-to-b from-pink-400 to-pink-500 text-white"
-                  : "bg-white hover:bg-gray-100"
-              }`}
-            >
-              {e}
-            </button>
+            key={e}
+            onClick={() => {
+              console.log("Clicked:", e);
+              setSelectedCategory(e);
+            }}
+            className={`px-4 py-2 border rounded-md transition ${
+              selectedCategory === e
+                ? "bg-gradient-to-b from-pink-400 to-pink-500 text-white"
+                : "bg-white hover:bg-gray-100"
+            }`}
+          >
+            {e}
+          </button>
+
           ))}
         </div>
 
