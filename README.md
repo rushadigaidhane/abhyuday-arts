@@ -28,4 +28,57 @@ The site highlights art courses, image gallery, testimonials and provides a visu
 ---
 
 ## 📁 Project Structure (abridged)
+src/
+├─ components/
+│ ├─ Header.jsx
+│ ├─ Footer.jsx
+│ ├─ Gallery.jsx
+│ └─ ...
+├─ pages/
+│ ├─ Home.jsx
+│ ├─ Courses.jsx
+│ └─ ...
+├─ App.jsx
+├─ main.jsx
+└─ Home.css
 
+## 🚀 Getting Started
+
+1. Clone the repository:  
+   ```sh
+   git clone https://github.com/rushadigaidhane/abhyuday-arts.git
+   cd abhyuday-arts
+
+2. Install dependencies:
+
+    npm install
+
+
+3. Run the app (development mode):
+
+    npm run dev
+    or if using CRA:
+    npm start
+
+
+4. Build for production:
+
+    npm run build
+
+📝 Usage Notes
+
+Place course images in the /public folder (e.g., /public/drawing.jpg, /public/intermediat.jpg).
+
+In Home.jsx, the classes and images arrays control the content shown in sections; update them to add new courses or gallery items.
+
+Ensure Header.jsx is fixed at the top and all content sections have adequate top padding to avoid overlapping.
+
+🌟 Contributions & Roadmap
+
+Add backend integration for contact forms and registrations.
+
+Add admin panel for uploading gallery images or new courses.
+
+Enhance animations with Framer Motion or GSAP.
+
+Add multi-language support or dark mode.
