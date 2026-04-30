@@ -1,34 +1,11 @@
-/* In Gallery.css */
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Jost:wght@300;400;500;600&display=swap');
 
-footer {
-    margin-top: 0 !important;
-}
+body, html { margin: 0; padding: 0; overflow-x: hidden; }
+footer { margin-top: 0 !important; }
+
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0%   { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
-
-.animate-fadeInUp {
-    animation: fadeInUp 1s forwards;
-}
-
-.animate-fadeInUp.delay-200 {
-    animation-delay: 0.2s;
-}
-
-.animate-fadeInUp.delay-400 {
-    animation-delay: 0.4s;
-}
-
+.animate-fadeInUp { animation: fadeInUp 0.8s ease forwards; }
+.animate-fadeInUp.delay-200 { animation-delay: 0.2s; }
